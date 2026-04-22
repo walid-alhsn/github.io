@@ -1,268 +1,349 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
-  <meta charset="UTF-8">
-  <title>Abdullahi Alhassan – Computer Science and Artificial Intelligence Undergraduate</title>
-  <style>
-    body { font-family: Arial, sans-serif; max-width: 800px; margin: 0 auto; padding: 1.5rem; line-height: 1.6; }
-    header { border-bottom: 2px solid #333; margin-bottom: 1rem; }
-    h1 { margin-bottom: 0.2rem; }
-    h2 {text-align: center; font-style: italic;}
-    .tagline { font-style: italic; color: #555; }
-  </style>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Abdullahi Alhassan portfolio website" />
+  <title>Abdullahi | Portfolio</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css" />
 </head>
-
 <body>
-    
-  <header>
-    <h1>Abdullahi Ibrahim Alhassan</h1>
-    <p class="tagline">Computer Science and Artificial Intelligence undergraduate</p>
-  </header>
- 
-<main>
-  <!-- Hero section -->
-  <section id="hero">
-    <h2>Hello, I'm Abdullahi</h2>
-    <p>I am a first-year Computer Science and AI student learning the fundamentals of programming, artificial intelligence, web development, computer architecture, and databases.</p>
-    <p>I'm particularly interested in how intelligent software can be used to solve real-world problems.</p>
-    <p><strong>What I do:</strong>I enjoy building <strong>reliable, applications</strong>, learning how systems work under the hood and exploring the possibilities of technology.</p>
-    <p><a href="#projects">View my projects</a> 
-  </section>
- 
-  <hr size="3" color="black" noshade >
-  <!-- Projects section -->
-  <section id="projects">
-    <h2>Featured projects</h2>
- 
-    <article>
-      <h3>Project 1 - Finances Tracker</h3>
-      <p><strong>Summary:</strong> I used python to create a tracker that allows a user to track their income and expenses, set savings goals, obtain spending advice, and view and compare their data visually in the form of pie charts.  </p>
-      <p><strong>Tech stack:</strong> Python, CSV files</p>
-    </article>
- 
-    <article>
-      <h3>Project 2 - Compound Interest Calculator</h3>
-      <p><strong>Summary:</strong> I used python to create a calculator that calculates compound interest based on year, time and rate.</p>
-      <p><strong>Tech stack:</strong> Python</p>
-    </article>
+  <div class="site-shell">
+    <header class="site-header">
+      <div class="container nav-wrap">
+        <a href="#home" class="logo">abdullahi<span>.</span></a>
 
-    <article>
-        <h3>Project 3 - High Score Tracker</h3>
-        <p><strong>Summary:</strong> I used python to create a general tracker that sorts high scores, like the ones used in arcade games.</p>
-        <p><strong>Tech stack:</strong> Python</p>
+        <nav class="desktop-nav" aria-label="Primary navigation">
+          <a href="#about">About</a>
+          <a href="#work">Work</a>
+          <a href="#experience">Experience</a>
+          <a href="#diary">Diary</a>
+          <a href="#contact">Contact</a>
+        </nav>
+
+        <div class="nav-actions">
+          <button class="theme-toggle" id="themeToggle" aria-label="Toggle dark mode">◔</button>
+          <a href="#contact" class="btn btn-dark">Let's Talk</a>
+          <button class="menu-toggle" id="menuToggle" aria-label="Open menu">☰</button>
+        </div>
+      </div>
+
+      <div class="mobile-menu" id="mobileMenu">
+        <a href="#about">About</a>
+        <a href="#work">Work</a>
+        <a href="#experience">Experience</a>
+        <a href="#diary">Diary</a>
+        <a href="#contact">Contact</a>
+      </div>
+    </header>
+
+    <main>
+      <section class="hero section" id="home">
+        <div class="hero-glow hero-glow-left"></div>
+        <div class="hero-glow hero-glow-right"></div>
+        <div class="container hero-inner">
+          <div class="eyebrow-pill">✦ CS &amp; AI @ UNIVERSITY OF YORK</div>
+          <h1>
+            Hi, I'm <br>
+            <span class="accent">Abdullahi</span><br>
+            <span id="typingText">Problem Solver</span><span class="cursor">|</span>
+          </h1>
+          <p class="hero-copy">
+            First-year Computer Science &amp; Artificial Intelligence student at the University of York —
+            building at the intersection of code, design, and intelligent systems.
+          </p>
+          <div class="hero-actions">
+            <a href="#work" class="btn btn-dark">View My Work</a>
+            <a href="#about" class="btn btn-light">Learn More</a>
+          </div>
+          <a href="#about" class="scroll-indicator" aria-label="Scroll down">↓</a>
+        </div>
+      </section>
+
+      <section class="section" id="about">
+        <div class="container two-column about-grid">
+          <div>
+            <p class="section-label">ABOUT</p>
+            <h2>Where curiosity<br>meets code.</h2>
+            <p>
+              I'm Abdullahi Alhassan — a first-year Computer Science and Artificial Intelligence student at the University of York.
+              I'm passionate about understanding how intelligent systems work and building technology that makes a genuine difference.
+            </p>
+            <p>
+              From machine learning fundamentals to full-stack web development, I love exploring the full breadth of CS.
+              Currently working on personal projects that blend AI with clean, thoughtful design.
+            </p>
+          </div>
+
+          <div class="skills-grid">
+            <article class="info-card">
+              <div class="icon-chip">&lt;/&gt;</div>
+              <h3>Programming</h3>
+              <p>Python, Java, JavaScript, and hands-on experience building real-world projects.</p>
+            </article>
+            <article class="info-card">
+              <div class="icon-chip">⚡</div>
+              <h3>AI &amp; ML</h3>
+              <p>Passionate about machine learning, neural networks, and intelligent systems.</p>
+            </article>
+            <article class="info-card">
+              <div class="icon-chip">◔</div>
+              <h3>Web Dev</h3>
+              <p>HTML, CSS, JavaScript, and responsive interfaces with clean structure.</p>
+            </article>
+            <article class="info-card active">
+              <div class="icon-chip">◎</div>
+              <h3>Problem Solving</h3>
+              <p>Algorithmic thinking, data structures, and a love for elegant solutions.</p>
+            </article>
+          </div>
+        </div>
+      </section>
+
+    <section class="section" id="work">
+  <div class="container">
+    <p class="section-label center">SELECTED WORK</p>
+    <h2 class="center">Featured projects.</h2>
+
+    <div class="projects-grid">
+
+      <!-- Project 1 -->
+      <article class="project-card">
+        <div class="project-image">
+          <img src="https://images.unsplash.com/photo-1554224155-6726b3ff858f?w=800&auto=format&fit=crop" alt="Finances Tracker">
+        </div>
+        <div class="project-body">
+          <p class="project-meta">WEB APP · 2025</p>
+          <div class="project-top-row">
+            <h3>Finances Tracker</h3>
+            <span class="project-arrow">↗</span>
+          </div>
+          <p>App that tracks a user's income, expenses and savings goal.</p>
+          <span class="tag">Web App</span>
+          <div class="project-links">
+            <a href="#">GitHub</a>
+            <a href="#">Live demo</a>
+          </div>
+        </div>
       </article>
-  </section>
- 
-  <hr size="3" color="black" noshade >
 
-  <!-- Skills section -->
-  <section id="skills">
-    <h2>Skills and tools</h2>
-    <p><strong>Languages:</strong> Python, Java, HTML, CSS, JavaScript, SQL</p>
-    <p><strong>Frameworks and tools:</strong> Git, GitHub, VS Code</p>
-    <p><strong>Interests:</strong> Web development, App development, Artificial Intelligence</p>
-  </section>
+      <!-- Project 2 -->
+      <article class="project-card">
+        <div class="project-image">
+          <img src="https://images.unsplash.com/photo-1611974789855-9c2a0a7236a3?w=800&auto=format&fit=crop" alt="Compound Interest Calculator">
+        </div>
+        <div class="project-body">
+          <p class="project-meta">WEB APP · 2025</p>
+          <div class="project-top-row">
+            <h3>Compound Interest Calculator</h3>
+            <span class="project-arrow">↗</span>
+          </div>
+          <p>Calculator that calculates compound interest based on year, time and rate.</p>
+          <span class="tag">Web App</span>
+          <div class="project-links">
+            <a href="#">GitHub</a>
+            <a href="#">Live demo</a>
+          </div>
+        </div>
+      </article>
 
-  <hr size="3" color="black" noshade >
+      <!-- Project 3 -->
+      <article class="project-card featured-outline">
+        <div class="project-image">
+          <img src="https://images.unsplash.com/photo-1550745165-9bc0b252726f?w=800&auto=format&fit=crop" alt="High Score Tracker">
+        </div>
+        <div class="project-body">
+          <p class="project-meta">WEB APP · 2025</p>
+          <div class="project-top-row">
+            <h3>High Score Tracker</h3>
+            <span class="project-arrow">↗</span>
+          </div>
+          <p>App that tracks and sorts high scores, like the ones used in arcade games.</p>
+          <span class="tag">Web App</span>
+          <div class="project-links">
+            <a href="#">GitHub</a>
+            <a href="#">Live demo</a>
+          </div>
+        </div>
+      </article>
 
-  <!-- Now / Goals section -->
-  <section id="now">
-    <h2>What I am working on now</h2>
-    <p>
-      Right now I am learning SQL for working with databases and practising Java programming as well as Python programming
-      to strengthen my understanding of algorithms and data structures.
-    </p>
-    <p>
-      Over the next year I aim to build small web applications that connect a web front end
-      to a real database, so I can practise full-stack development and data handling.
-    </p>
-    <p>
-      I am particularly interested in roles and projects related to web development, data engineering and artificial intelligence,
-      where I can design efficient intelligent systems and work with real-world datasets.
-    </p>
-  </section>
-
-  <hr size="3" color="black" noshade >
- 
-  <!-- Contact section -->
-  <!-- Contact Form — paste into your HTML where you want the form -->
-<section id="contact">
-  <h2>Get In Touch</h2>
-  <form id="contact-form">
-    <div>
-      <label for="name">Your Name</label>
-      <input type="text" id="name" name="name" required
-             placeholder="Jane Smith" />
     </div>
-    <div>
-      <label for="email">Your Email</label>
-      <input type="email" id="email" name="email" required
-             placeholder="jane@example.com" />
-    </div>
-    <div>
-      <label for="message">Message</label>
-      <textarea id="message" name="message" required
-                placeholder="Say hello..." rows="5"></textarea>
-    </div>
-    <button type="submit" id="submit-btn">Send Message</button>
-    <p id="form-status"></p>
-  </form>
+  </div>
 </section>
 
+      <section class="section" id="experience">
+        <div class="container narrow">
+          <p class="section-label center">EXPERIENCE</p>
+          <h2 class="center">Education &amp; journey.</h2>
+
+          <div class="timeline-list">
+            <article class="timeline-item">
+              <div class="timeline-date">2025 — Present</div>
+              <div class="timeline-content">
+                <h3>BSc Computer Science &amp; Artificial Intelligence</h3>
+                <p class="timeline-place">University of York</p>
+                <p>First-year student exploring core CS fundamentals, algorithms, machine learning, and AI theory. Actively involved in university tech societies and hackathons.</p>
+              </div>
+            </article>
+
+            <article class="timeline-item">
+              <div class="timeline-date">2023 — 2025</div>
+              <div class="timeline-content">
+                <h3>A-Levels</h3>
+                <p class="timeline-place">Sixth Form</p>
+                <p>Studied Mathematics, Computer Science, and Physics — building a strong analytical foundation that fuels my passion for problem-solving and engineering.</p>
+              </div>
+            </article>
+
+            <article class="timeline-item">
+              <div class="timeline-date">2022 — Present</div>
+              <div class="timeline-content">
+                <h3>Self-Taught Developer</h3>
+                <p class="timeline-place">Personal Projects</p>
+                <p>Built personal projects spanning web development, Python scripting, and early ML experiments. Continuously learning through online courses and building in public.</p>
+              </div>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <section class="section" id="diary">
+        <div class="container narrow">
+          <p class="section-label">PRODUCTION DIARY</p>
+          <h2>What I've been<br>building &amp; learning.</h2>
+          <p class="section-intro">A running log of projects, ideas, and reflections — the messy, honest process behind the work.</p>
+
+          <div class="accordion">
+            <article class="accordion-item">
+              <button class="accordion-header">
+                <span class="accordion-meta">🗓 March 2026 <span class="pill blue">Web Dev</span></span>
+                <strong>Built this portfolio from scratch</strong>
+                <span class="accordion-icon">⌄</span>
+              </button>
+              <div class="accordion-body">
+                <p>Planned the layout, created reusable sections, and refined spacing and typography until the site felt clean, modern, and easy to navigate.</p>
+              </div>
+            </article>
+
+            <article class="accordion-item">
+              <button class="accordion-header">
+                <span class="accordion-meta">🗓 February 2026 <span class="pill purple">AI / ML</span></span>
+                <strong>Experimenting with neural networks</strong>
+                <span class="accordion-icon">⌄</span>
+              </button>
+              <div class="accordion-body">
+                <p>Started exploring neural networks in more depth, learning how layers, activations, and optimisation work together in practical machine learning projects.</p>
+              </div>
+            </article>
+
+            <article class="accordion-item">
+              <button class="accordion-header">
+                <span class="accordion-meta">🗓 January 2026 <span class="pill green">University</span></span>
+                <strong>First semester reflections</strong>
+                <span class="accordion-icon">⌄</span>
+              </button>
+              <div class="accordion-body">
+                <p>Reflected on adapting to university study, balancing coursework, and improving independent learning habits while building confidence in technical subjects.</p>
+              </div>
+            </article>
+
+            <article class="accordion-item">
+              <button class="accordion-header">
+                <span class="accordion-meta">🗓 December 2025 <span class="pill orange">Project</span></span>
+                <strong>Side project: a local AI study assistant</strong>
+                <span class="accordion-icon">⌄</span>
+              </button>
+              <div class="accordion-body">
+                <p>Worked on an early AI assistant idea focused on study support, note organisation, and lightweight local experimentation.</p>
+              </div>
+            </article>
+
+            <article class="accordion-item">
+              <button class="accordion-header">
+                <span class="accordion-meta">🗓 September 2025 <span class="pill pink">Life</span></span>
+                <strong>Arrived at York</strong>
+                <span class="accordion-icon">⌄</span>
+              </button>
+              <div class="accordion-body">
+                <p>Started a new chapter at university, meeting new people, settling into the city, and beginning the transition into a more focused technical path.</p>
+              </div>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <section class="section" id="contact">
+        <div class="container narrow contact-wrap">
+          <div class="contact-heading">
+            <p class="section-label center">CONTACT</p>
+            <h2 class="center">Let's build something<br>great together.</h2>
+          </div>
+
+          <div class="contact-grid">
+            <form class="contact-form" id="contactForm" novalidate>
+              <div class="form-row two-up">
+                <label>
+                  <span>NAME</span>
+                  <input type="text" name="name" placeholder="John Doe" required>
+                </label>
+                <label>
+                  <span>EMAIL</span>
+                  <input type="email" name="email" placeholder="john@example.com" required>
+                </label>
+              </div>
+
+              <label>
+                <span>CATEGORY</span>
+                <select name="category" required>
+                  <option value="">Select a category</option>
+                  <option value="1">General</option>
+                  <option value="2">Business</option>
+                  <option value="3">Feedback</option>
+                </select>
+              </label>
+
+              <label>
+                <span>MESSAGE</span>
+                <textarea name="message" rows="7" placeholder="Tell me about your project..." required></textarea>
+              </label>
+
+              <button type="submit" class="btn btn-dark submit-btn">✈ Send Message</button>
+              <p class="form-message" id="formMessage"></p>
+            </form>
+
+            <aside class="contact-info">
+              <div>
+                <h3>Get in touch</h3>
+                <p>✉ qkf526@york.ac.uk</p>
+                <p>⌖ York, United Kingdom</p>
+              </div>
+
+              <div class="social-block">
+                <h3>Socials</h3>
+                <a href="#">GitHub</a>
+                <a href="#">LinkedIn</a>
+                <a href="#">Twitter / X</a>
+              </div>
+            </aside>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <footer class="site-footer">
+      <div class="container footer-wrap">
+        <p>© 2026 Abdullahi Alhassan. All rights reserved.</p>
+        <p>CS &amp; AI @ University of York</p>
+      </div>
+    </footer>
+
+    <button class="back-to-top" id="backToTop" aria-label="Back to top">↑</button>
+  </div>
+
+  <script src="script.js"></script>
   
-  <hr size="3" color="black" noshade >
-    <!-- Production diary -->
-
-  <section id="production-diary">
-    <h2>Production diary</h2>
-    <p style="text-decoration: underline;"><strong>Date:</strong> 3 February 2026</p>
-    <p>This day, we got introduced to github, created a github account and repository, learnt how to use and navigate the platform and hosted our first website.</p>
-
-    <p>
-      I am most happy that I got to host the site publicly so anyone could access it.
-    </p>
-    <p>
-      I found it difficult to edit my code in github at first, but i got the hang of it
-    </p>
-    <p>
-      Next time I want to improve my website layout, structure and information.
-    </p>
-
-    <p style="text-decoration: underline;"><strong>Date:</strong> 10 February 2026</p>
-    <p>
-      This day I worked on my GitHub Pages portfolio website. I focused on
-      creating or improving the main sections (About, Projects, Skills, Contact).
-    </p>
-    <p>
-      I am most happy that I was able to structure my portfolio website well and entered most information
-    </p>
-    <p>
-      I didn't have any difficulties
-    </p>
-    <p>
-      Next time I want to refine my website to look cleaner.
-    </p>
-
-    <p style="text-decoration: underline;"><strong>Date:</strong> 13 February 2026</p>
-    <p>
-      This day I refined my page by centralising the section headers, and dividing sections using hr lines.
-    </p>
-    <p>
-      I am most happy that I was able to structure my portfolio website well and entered most information
-    </p>
-    <p>
-      I didn't have any difficulties
-    </p>
-    <p>
-      Next time I want to add styling to my website to make it colourful and for the text to have better font styles.
-    </p>
-  </section>
-   
-</main>
-  
-<script>
-  // ── Supabase config ─────────────────────────────────────────────
-  // Replace these two values with YOUR project URL and anon key
-  const SUPABASE_URL  = "https://ocxeokhxbdwhijclkzst.supabase.co";
-  const SUPABASE_ANON = "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJzdXBhYmFzZSIsInJlZiI6Im9jeGVva2h4YmR3aGlqY2xrenN0Iiwicm9sZSI6ImFub24iLCJpYXQiOjE3NzMwNjU0NTEsImV4cCI6MjA4ODY0MTQ1MX0.fQQQ4huLJqL9Y7Cpog6CgsDiMClr2tLGC-t_9Id0ADE";
- 
-  // ── Form submission handler ──────────────────────────────────────
-  document.getElementById("contact-form")
-    .addEventListener("submit", async function (event) {
- 
-      // Prevent the default browser form submission (page reload)
-      event.preventDefault();
- 
-      // Grab the form values
-      const name    = document.getElementById("name").value.trim();
-      const email   = document.getElementById("email").value.trim();
-      const message = document.getElementById("message").value.trim();
-      const btn     = document.getElementById("submit-btn");
-      const status  = document.getElementById("form-status");
- 
-      // Disable the button while we send (prevents double-submit)
-      btn.disabled = true;
-      btn.textContent = "Sending...";
-      status.textContent = "";
- 
-      try {
-        // Call the Supabase REST API to insert a row
-        const response = await fetch(
-          `${SUPABASE_URL}/rest/v1/contact_messages`,
-          {
-            method: "POST",
-            headers: {
-              "Content-Type": "application/json",
-              "apikey":        SUPABASE_ANON,
-              "Authorization": `Bearer ${SUPABASE_ANON}`,
-              "Prefer":        "return=minimal"
-            },
-            body: JSON.stringify({ name, email, message })
-          }
-        );
- 
-        if (response.ok) {
-          // Success — show confirmation and reset the form
-          status.textContent = "✓ Message sent! I will be in touch soon.";
-          status.style.color = "#1A7A4A";
-          event.target.reset();
-        } else {
-          // Supabase returned an error — log it for debugging
-          const err = await response.json();
-          console.error("Supabase error:", err);
-          status.textContent = "Something went wrong. Please try again.";
-          status.style.color = "#DC2626";
-        }
- 
-      } catch (networkError) {
-        // Network/connectivity problem
-        console.error("Network error:", networkError);
-        status.textContent = "Could not connect. Check your internet connection.";
-        status.style.color = "#DC2626";
-      } finally {
-        // Always re-enable the button
-        btn.disabled = false;
-        btn.textContent = "Send Message";
-      }
-    });
-
-  <!-- Project db script -->
-      async function loadProjects() {
-    const response = await fetch(
-      `${SUPABASE_URL}/rest/v1/projects?order=created_at.desc`,
-      {
-        headers: {
-          'apikey':        SUPABASE_ANON,
-          'Authorization': `Bearer ${SUPABASE_ANON}`
-        }
-      }
-    );
-    const projects = await response.json();
-    const container = document.getElementById('projects-grid');
- 
-    projects.forEach(project => {
-      const card = document.createElement('div');
-      card.className = 'project-card';
-      card.innerHTML = `
-        <h3>${project.title}</h3>
-        <p>${project.description || ''}</p>
-        <p><strong>Tech:</strong> ${project.tech_stack || ''}</p>
-        ${project.live_url
-          ? `<a href='${project.live_url}'>Live Demo</a>`
-          : ''}
-        ${project.github_url
-          ? `<a href='${project.github_url}'>GitHub</a>`
-          : ''}
-      `;
-      container.appendChild(card);
-    });
-  }
- 
-  // Call when the page loads
-  loadProjects();
-
-</script>
-
 </body>
 </html>
